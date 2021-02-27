@@ -1,0 +1,123 @@
+.loginScreen {
+  height: 100vh;
+  background-image: url("./Netflix-Background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  transition: all 300ms ease-in-out;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+.loginScreen_logo {
+  width: 5.25rem;
+  object-fit: contain;
+}
+
+.loginScreen_button {
+  color: white;
+  font-size: 1rem;
+  padding: 0.325rem 0.65rem;
+  background-color: #e50914;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.loginScreen_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.loginScreen_bodyContents {
+  padding: 2rem;
+  color: white;
+}
+
+.loginScreen_input > form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem 0rem;
+  transform: translateZ(400px);
+}
+
+.loginScreen_input > form > input,
+button {
+  padding: 0.625rem;
+  outline-width: 0;
+  border: none;
+}
+
+.loginScreen_input > form > input {
+  width: 30%;
+  max-width: 600px;
+}
+
+h1 {
+  font-weight: 450;
+  margin-top: 0;
+  transform: translateZ(400px);
+}
+
+h2 {
+  font-weight: 400;
+  margin-top: 0.5rem;
+  transform: translateZ(400px);
+}
+
+h3 {
+  font-weight: 300;
+  margin-top: 1rem;
+  transform: translateZ(400px);
+}
+
+.loginScreen_getStarted {
+  font-size: 1rem;
+  color: white;
+  background: #e50914;
+  font-weight: 450;
+}
+
+.loginScreen_bodyContents {
+  position: relative;
+}
+
+.loginScreen_bodyFilter {
+  text-align: center;
+  border-radius: 0.9rem;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 16px 15px 15px 2px rgb(0, 0, 0, 0.6);
+}
+
+.loginScreen_bodyFilter:hover {
+  box-shadow: 16px 15px 15px 2px rgb(0, 0, 0, 0.55);
+}
+
+@media only screen and (max-width: 420px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  .loginScreen_input > form > input {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .loginScreen_bodyFilter {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-width: 200px;
+  min-height: 200px;
+  background-color: #111;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background: #111111;
+  transition: transform 550ms;
+}
+::-webkit-scrollbar:hover {
+  transform: scale(1.1);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: "#111";
+  border-radius: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(126, 126, 126, 0.37);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(92, 92, 92);
+  transform: scale(1.2);
+}

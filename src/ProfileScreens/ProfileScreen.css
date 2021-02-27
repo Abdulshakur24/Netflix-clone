@@ -1,0 +1,126 @@
+.profileScreen_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.profileScreen_contents {
+  width: 35rem;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.profileScreen_info {
+  display: flex;
+}
+
+.profileScreen_emailInfo {
+  background-color: gray;
+}
+
+.profileScreen_emailInfo > h5 {
+  padding: 0.5rem;
+  font-weight: 400;
+}
+
+.profileScreen_info > img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.profileScreen_email {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+.profileScreen_editProfile {
+  border-bottom: 1px solid rgb(54, 54, 54);
+  margin-bottom: 0.5rem;
+}
+
+.profileScreen_editProfile > h2 {
+  margin-bottom: 0.125rem;
+  font-weight: 400;
+}
+
+.profileScreen_plans {
+  border-bottom: 1px solid rgb(54, 54, 54);
+}
+
+.profileScreen_plans > h6 {
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.profileScreen_plans_and_subscriptions {
+  display: flex;
+  justify-content: flex-end;
+  height: fit-content;
+}
+
+.profileScreen_subscriptions {
+  width: 80%;
+}
+
+.profileScreen_renewalDate {
+  margin-top: 0.5rem;
+}
+
+.profileScreen_renewalDate > h6 {
+  font-weight: 400;
+}
+
+.profileScreen_planPackages {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileScreen_packages {
+  padding: 0rem 1rem;
+}
+
+.profileScreen_planPackages > button {
+  margin-top: 2rem;
+  background-color: #e50914;
+  color: white;
+  cursor: pointer;
+}
+
+.profileScreen_planPackage {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  transition: all 100ms ease-in-out;
+  opacity: 0.8;
+}
+
+.profileScreen_planPackage > h5 {
+  font-weight: 400;
+}
+
+.profileScreen_planPackage:hover {
+  opacity: 1;
+}
+
+.profileScreen_planPackage > .red {
+  background-color: #e50914;
+  color: white;
+  cursor: pointer;
+}
+
+.profileScreen_planPackage > .gray {
+  background-color: gray;
+  color: white;
+}
+
+@media only screen and (max-width: 28.125rem) {
+  .profileScreen_contents {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
